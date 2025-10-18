@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="description" content="Arpit Kumar Sharma • Full‑stack and AI Developer passionate about automation and open‑source." />
+  <meta property="og:title" content="Arpit Kumar Sharma • Portfolio" />
+  <meta property="og:description" content="Full‑stack and AI developer passionate about automation and open‑source." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./1755945970807.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Arpit Kumar Sharma • Portfolio" />
+  <meta name="twitter:description" content="Full‑stack and AI developer passionate about automation and open‑source." />
+  <meta name="twitter:image" content="./1755945970807.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./1755945970807.png" type="image/png" />
+  <link rel="preload" as="image" href="./1755945970807.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Arpit Kumar Sharma • Portfolio</title>
+</head>
+<body>
+  <!-- Background canvas for subtle particles -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+  <a class="brand" href="#hero">Arpit Kumar Sharma</a>
+    <nav class="nav" aria-label="Primary">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="./Arpit_Resume.pdf" target="_blank" rel="noopener" download>
+        Resume
+      </a>
+    </nav>
+  </header>
+
+  <!-- Reading progress bar -->
+  <div id="progress" aria-hidden="true"></div>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>
+            Hey, I'm <span class="accent">Arpit Kumar Sharma</span>
+            <span class="wave" aria-hidden="true">👋</span>
+          </h1>
+          <p class="typewriter" aria-live="polite">
+            <span id="typewriter"></span>
+            <span class="caret" aria-hidden="true">|</span>
+          </p>
+          <p class="sub">“Full‑stack and AI developer passionate about automation and open‑source technologies”.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">See Projects</a>
+            <a class="btn" href="mailto:arkushworks@gmail.com?subject=Hi%20Arpit">Say Hello</a>
+            <button id="toggleParticles" class="btn btn-ghost" aria-pressed="true">Particles: On</button>
+          </div>
+          <div id="streak" class="streak" aria-live="polite"></div>
+        </div>
+        <div class="hero-right">
+          <figure class="pfp-wrap reveal">
+            <img src="./1755945970807.png" alt="Portrait of Arpit Kumar Sharma" class="pfp" />
+            <figcaption>Available for new opportunities</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">Scroll</div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <p class="lead reveal">
+        I'm a full‑stack and AI developer who ships production systems. I enjoy building fast,
+        accessible experiences and automating workflows end‑to‑end using modern tooling. I’m
+        keen on open‑source, performance, and measurable product impact.
+      </p>
+      <ul class="highlights">
+        <li class="reveal">Full‑stack (MERN, FastAPI) • LLMs • RAG • MLOps</li>
+        <li class="reveal">Docker • CI/CD • Cloud (AWS/GCP/Azure) • SQL/NoSQL</li>
+        <li class="reveal">Performance‑first • Pragmatic • Loves great UX</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section alt">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-point"></div>
+          <div class="tl-content">
+            <h3>AI Software Developer Intern • NYX</h3>
+            <div class="muted">07/2025 — 08/2025</div>
+            <p>Built containerized AI microservices with FastAPI, Celery, and LLM APIs (OpenAI, Eleven Labs). Automated media pipelines in Azure storage and CI/CD with Docker and GitHub Actions, reducing manual effort by ~30%.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-point"></div>
+          <div class="tl-content">
+            <h3>Data Scientist Intern • Celebal Technologies</h3>
+            <div class="muted">06/2025 — 07/2025</div>
+            <p>Completed 8‑week hands‑on training across Python, OOP, SQL, ML, and Generative AI. Built end‑to‑end ML solutions with preprocessing, feature engineering, and regression techniques.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-point"></div>
+          <div class="tl-content">
+            <h3>Cybersecurity Trainee • PwC</h3>
+            <div class="muted">02/2025 — 06/2025</div>
+            <p>Completed PwC Launchpad Path with hands‑on training in Python, cybersecurity, and prompt engineering. Gained practical scripting and security fundamentals.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-point"></div>
+          <div class="tl-content">
+            <h3>AI/ML Instructor • JECRC</h3>
+            <div class="muted">02/2025 — 05/2025</div>
+            <p>Taught 100+ first‑year students via a 10‑module curriculum, culminating in an end‑to‑end project. Built an admission chatbot with Mistral 7B Instruct using RAG.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-point"></div>
+          <div class="tl-content">
+            <h3>Research Consultant • WorldQuant</h3>
+            <div class="muted">06/2024 — 02/2025</div>
+            <p>Developed 15+ Alphas (mathematical models) to weight financial portfolios and generate trading signals; rewarded based on efficiency.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="filters" role="toolbar" aria-label="Project filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="ml">ML</button>
+        <button class="chip" data-filter="tools">Tools</button>
+      </div>
+      <div class="grid projects">
+        <article class="card project reveal" data-tags="ml web tools">
+          <h3>Campaign Recommendation System</h3>
+          <p>FastAPI service with OpenAI LLM integration for keyword performance analysis and automated replacement suggestions. Configurable scoring with Azure SQL backend.</p>
+          <div class="tags"><span>FastAPI</span><span>LLM</span><span>Azure SQL</span></div>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="https://github.com/arkusho/Campaign-Recommendation" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+        <article class="card project reveal" data-tags="ml web">
+          <h3>JECRC Chatbot</h3>
+          <p>FAISS vector search with Sentence Transformer embeddings for FAQ retrieval, fallback to Ollama's Mistral 7B Instruct. Streamlit app with real‑time chat and cached model loading.</p>
+          <div class="tags"><span>RAG</span><span>FAISS</span><span>Ollama</span></div>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="https://github.com/AKS-IS/Chatbot-for-College" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+        <article class="card project reveal" data-tags="tools web">
+          <h3>WebTask (MERN)</h3>
+          <p>Secure note‑taking app with JWT auth, Redis rate limiting, React+Vite frontend and Express API; Tailwind CSS and prod deployment setup.</p>
+          <div class="tags"><span>MERN</span><span>JWT</span><span>Redis</span></div>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="https://github.com/arkusho/WebTask---A-to-do-list-web-app-with-JWT-auth" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-cloud reveal" aria-label="Skills cloud">
+        <button class="skill">C++</button>
+        <button class="skill">Python</button>
+        <button class="skill">JavaScript</button>
+        <button class="skill">Golang</button>
+        <button class="skill">FastAPI</button>
+        <button class="skill">React</button>
+        <button class="skill">Node.js</button>
+        <button class="skill">Express</button>
+        <button class="skill">MongoDB</button>
+        <button class="skill">PostgreSQL</button>
+        <button class="skill">Redis</button>
+        <button class="skill">Docker</button>
+        <button class="skill">Kubernetes</button>
+        <button class="skill">Terraform</button>
+        <button class="skill">CI/CD</button>
+        <button class="skill">AWS</button>
+        <button class="skill">GCP</button>
+        <button class="skill">Linux</button>
+      </div>
+      <div class="meter reveal" aria-label="Focus split">
+        <div class="meter-labels">
+          <span>Frontend</span><span>Backend</span><span>AI/ML</span>
+        </div>
+        <div class="meter-bar">
+          <span style="--w: 35%" title="Frontend 35%"></span>
+          <span style="--w: 40%" title="Backend 40%"></span>
+          <span style="--w: 25%" title="AI/ML 25%"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="lead reveal">B.Tech in Computer Science and Engineering — JECRC College, Jaipur (RTU, Kota) • 11/2022 – 06/2026 (Expected) • Grade: 86.4</div>
+    </section>
+
+    <section id="certs" class="section alt">
+      <h2 class="section-title">Certifications & Training</h2>
+      <ul class="highlights">
+        <li class="reveal">ServiceNow Certified System Administrator (27169168) — Managed and configured core modules, roles, and security.</li>
+        <li class="reveal">ServiceNow Certified Application Developer (27187383) — Built and automated workflows with App Engine Studio.</li>
+        <li class="reveal">Cloud, DevOps and SRE, UpFlairs — AWS architectures, Docker/Kubernetes, CI/CD.</li>
+        <li class="reveal">Frontend Web Development, UpFlairs — HTML, CSS, Bootstrap and modern practices.</li>
+      </ul>
+    </section>
+
+    <section id="achievements" class="section">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="highlights">
+        <li class="reveal">CodeChef 3★ (1637) and AtCoder 7 Kyu (658); solved 250+ DSA problems.</li>
+        <li class="reveal">Smart India Hackathon: Top 8 in college among 200+ teams.</li>
+        <li class="reveal">Saraswati Silver Medal (Allen Career Institute, 2019).</li>
+        <li class="reveal">IQC 2024 by WorldQuant: Stage 1 Qualified.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form reveal" action="https://formsubmit.co" method="POST" onsubmit="return handleContactSubmit(event)">
+          <input type="hidden" name="_subject" value="Portfolio contact" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label>
+            <span>Name</span>
+            <input name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required placeholder="How can I help?"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <a class="btn" href="mailto:arkushworks@gmail.com?subject=Hi%20Arpit">Email directly</a>
+          </div>
+          <p id="contactStatus" class="muted" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="reveal">
+          <h3>Let's collaborate</h3>
+          <p>I'm open to full‑time roles, consulting, and interesting side projects. Based in India.</p>
+          <ul class="socials">
+            <li><a href="https://atcoder.jp/users/arkush" target="_blank" rel="noopener">AtCoder</a></li>
+            <li><a href="https://github.com/arkusho" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/arkush" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.codechef.com/users/lord_jester" target="_blank" rel="noopener">CodeChef</a></li>
+            <li><a href="https://www.cloudskillsboost.google/public_profiles/8e5a5c0d-d724-45a2-b7f4-b16630b32914" target="_blank" rel="noopener">Google Cloud Profile</a></li>
+            <li><a href="https://codolio.com/profile/arkush" target="_blank" rel="noopener">Codolio</a></li>
+            <li><a href="https://www.salesforce.com/trailblazer/arkush" target="_blank" rel="noopener">Salesforce Trailhead</a></li>
+            <li><a href="https://www.kaggle.com/arpitkumarsharma" target="_blank" rel="noopener">Kaggle</a></li>
+            <li><a href="./Arpit_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Arpit</span>
+    <span class="sep">•</span>
+    <a href="#hero">Back to top ↑</a>
+    <span class="sep">•</span>
+    <button id="installPWA" class="linkish" hidden>Install app</button>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
